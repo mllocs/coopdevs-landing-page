@@ -1,11 +1,12 @@
 import Project from './Project';
+import pathPrefix from '../../lib/pathPrefix';
 
 const Projects = () => (
   <div className='projects'>
     <h3>Projectes:</h3>
 
     <Project
-      logo='/static/projects/katuma.png'
+      logo={pathPrefix('/static/projects/katuma.png')}
       inverted={true}
       social={{github: 'coopdevs/openfoodnetwork', twitter: 'katuma_org'}}
     >
@@ -15,7 +16,7 @@ const Projects = () => (
     </Project>
 
     <Project
-      logo='/static/projects/timeoverflow.jpg'
+      logo={pathPrefix('/static/projects/timeoverflow.jpg')}
       social={{github: 'coopdevs/timeoverflow', twitter: 'timeoverflow'}}
     >
       <a href='https://www.timeoverflow.org/' target='_blank'>TIME OVERFLOW</a> és una plataforma

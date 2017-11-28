@@ -1,15 +1,15 @@
 import Head from 'next/head'
 import Header from './Header'
+import pathPrefix from '../lib/pathPrefix';
 
 const Layout = (props) => (
   <div>
     <Head>
       <title>Coopdevs</title>
       <link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans" rel="stylesheet" />
-      <link rel="icon" href="/static/favicon.png" type="image/x-icon" />
     </Head>
     <div>
-      <img src='/static/bg/birds.jpg' className='head_image' />
+      <img src={pathPrefix('/static/bg/birds.jpg')} className='head_image' />
       <Header />
       <div className='content'>
         {props.children}

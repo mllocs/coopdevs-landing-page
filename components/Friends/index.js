@@ -1,34 +1,35 @@
 import Friend from './Friend';
+import pathPrefix from '../../lib/pathPrefix';
 
 const friends = [
   {
     name: 'Open Food Network',
-    logo: '/static/friends/ofn.png',
+    logo: pathPrefix('/static/friends/ofn.png'),
     link: 'https://openfoodnetwork.org/',
   },
   {
     name: 'La Comunificadora',
-    logo: '/static/friends/la_comunificadora2.png',
+    logo: pathPrefix('/static/friends/la_comunificadora2.png'),
     link: 'http://emprenedoria.barcelonactiva.cat/emprenedoria/cat/programes/la-comunificadora.jsp',
   },
   {
     name: 'Som Connexió',
-    logo: '/static/friends/som_connexio.png',
+    logo: pathPrefix('/static/friends/som_connexio.png'),
     link: 'https://somconnexio.coop',
   },
   {
     name: 'Internet Interdisciplinary Institute (In3)',
-    logo: '/static/friends/in3.gif',
+    logo: pathPrefix('/static/friends/in3.gif'),
     link: 'http://www.uoc.edu/portal/ca/in3/index.html',
   },
   {
     name: 'Asociación para el Desarrollo de los Bancos de Tiempo',
-    logo: '/static/friends/adbdt.jpg',
+    logo: pathPrefix('/static/friends/adbdt.jpg'),
     link: 'http://adbdt.org/',
   },
   {
     name: 'Som Mobilitat',
-    logo: '/static/friends/som_mobilitat.png',
+    logo: pathPrefix('/static/friends/som_mobilitat.png'),
     link: 'https://www.sommobilitat.coop/',
   },
 ];
@@ -36,7 +37,12 @@ const friends = [
 const renderLogos = () => {
   return friends.map((friend, i) => {
     return (
-      <Friend logo={friend.logo} name={friend.name} link={friend.link} />
+      <Friend
+        logo={friend.logo}
+        name={friend.name}
+        link={friend.link}
+        key={i}
+      />
     );
   });
 };

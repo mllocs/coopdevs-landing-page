@@ -6,9 +6,9 @@ const renderSocial = (social) => {
     const handle = social[id];
 
     if (id === 'twitter') {
-      return <TwitterLink handle={handle} />
+      return <TwitterLink handle={handle} key={id} />
     } else if (id === 'github') {
-      return <GithubLink handle={handle} />
+      return <GithubLink handle={handle} key={id} />
     } else {
       return (<div>Social not found</div>);
     }
