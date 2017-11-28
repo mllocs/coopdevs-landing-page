@@ -1,6 +1,5 @@
 const Hero = () => (
   <div className='hero'>
-    <img src='/static/birds.jpg' />
     <div className='hero__logo'>
       <h1>Coopdevs</h1>
       <h2>Software lliure per a l'economia social</h2>
