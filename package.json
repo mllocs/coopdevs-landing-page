@@ -1,0 +1,21 @@
+{
+  "name": "Coopdevs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next",
+    "build": "next build",
+    "export": "next export",
+    "publish": "git subtree push --prefix out origin gh-pages"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^3.2.2",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "styled-components": "^2.2.3"
+  }
+}
