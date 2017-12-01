@@ -4,13 +4,20 @@ import Projects from '../components/Projects';
 import Friends from '../components/Friends';
 import Footer from '../components/Footer';
 
-const Index = () => (
-  <Layout>
-    <Hero />
-    <Projects />
-    <Friends />
-    <Footer />
-  </Layout>
-)
+import { setLocale } from '../lib/i18n';
+
+const Index = ({ url }) => {
+
+  setLocale(url.query.ln);
+
+  return (
+    <Layout>
+      <Hero />
+      <Projects />
+      <Friends />
+      <Footer />
+    </Layout>
+  )
+};
 
 export default Index

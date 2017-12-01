@@ -1,10 +1,13 @@
+import { t } from '../lib/i18n';
+
 const Header = () => (
   <div className='topbar'>
     <div></div>
     <div className='languages'>
-      <a href='#' className='language'>English</a>
-      <a href='#' className='language'>Spanish</a>
-      <a href='#' className='language'>Catalan</a>
+      <a href='?ln=en' className='language'>English</a>
+      <a href='?ln=es' className='language'>Español</a>
+      <a href='?ln=ca' className='language'>Català</a>
+      <div>{t('hello')}</div>
     </div>
 
     <style jsx>{`
