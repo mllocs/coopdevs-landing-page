@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import Footer from './Footer';
 import pathPrefix from '../lib/pathPrefix';
 
 const Layout = (props) => (
@@ -14,6 +15,7 @@ const Layout = (props) => (
       <div className='content'>
         {props.children}
       </div>
+      <Footer />
     </div>
 
     <style jsx global>{`

@@ -4,10 +4,8 @@ const Header = () => (
   <div className='topbar'>
     <div></div>
     <div className='languages'>
-      <a href='?ln=en' className='language'>English</a>
-      <a href='?ln=es' className='language'>Español</a>
       <a href='?ln=ca' className='language'>Català</a>
-      <div>{t('hello')}</div>
+      <a href='?ln=es' className='language'>Español</a>
     </div>
 
     <style jsx>{`
@@ -20,7 +18,8 @@ const Header = () => (
 
       .languages {
         margin-right: 10px;
-        font-weight: 400;
+        font-weight: 500;
+        font-size: 18px;
       }
 
       a {

@@ -1,3 +1,19 @@
 {
-  "hello": "Hola es"
+  "hero": {
+    "subtitle": "Software libre<br /> para la economía social",
+    "description_1": "Coopdevs es una asociación de desarrolladores de <em>software</em> que tiene como objectivo <strong> impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre.",
+    "description_2": "Si queréis colaborar con nosotros nos podéis encontrar en %{link_pagina} y en %{link_github}. También nos podéis escribir a <u>info@coopdevs.org</u> o hacernos una visita al %{link_espai} de la Sagrera."
+  },
+  "projects": {
+    "title": "Proyectos:",
+    "katuma": {
+      "description": "%{link} es una plataforma cooperativa que facilita la creación y gestión de grupos de consumo. Se trata de una alternativa más justa y sostenible que la ofrecida por grandes distribuidoras e intermediarios comerciales."
+    },
+    "timeoverflow": {
+      "description": "%{link} es una plataforma de gestión de Bancos de Tiempo, un sistema de oferta de servicios a cambio de tiempo. La plataforma facilita las tareas de gestión e intercambio de servicios entre miembros de un banco."
+    }
+  },
+  "friends": {
+    "title": "Colaboramos con:"
+  }
 }

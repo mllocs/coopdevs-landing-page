@@ -1,22 +1,19 @@
+import { t } from '../lib/i18n';
+
 const Hero = () => (
   <div className='hero'>
     <div className='hero__logo'>
       <h1>Coopdevs</h1>
-      <h2>Software lliure per a l'economia social</h2>
+      <h2>{t('hero.subtitle')}</h2>
     </div>
 
+    <p>{t('hero.description_1')}</p>
     <p>
-      Coopdevs és una associació de desenvolupadors de software que té com a objectiu
-      <strong> impulsar solucions tecnològiques per fomentar i promoure l’economia social</strong>.
-      Tots els projectes en que participem són de codi obert i llicència lliure.
-    </p>
-
-    <p>
-      Si voleu col.laborar amb nosaltres ens podeu trobar
-      a <a href='http://community.coopdevs.org'>community.coopdevs.org</a> i
-      a <a href='https//github.com/coopdevs'>github.com/coopdevs</a>. També
-      ens podeu escriure a <u>info@coopdevs.org</u> o visitar-nos
-      a <a href='espai'>l’Espai 30</a> de la Sagrera.
+      {t('hero.description_2', {
+        link_pagina: <a href='http://community.coopdevs.org'>community.coopdevs.org</a>,
+        link_github: <a href='https//github.com/coopdevs'>github.com/coopdevs</a>,
+        link_espai: <a href='espai'>Espai 30</a>
+      })}
     </p>
 
     <style jsx>{`
@@ -25,29 +22,36 @@ const Hero = () => (
       .hero__logo {
         width: 100%;
         text-align: center;
-        padding: 20px 0 40px;
+        padding: 60px 0 80px;
+        vertical-align: top;
       }
 
       h1 {
-        font-size: 120px;
-        margin: 0 auto;
-        padding-right: 140px;
+        display: inline-block;
+        font-size: 78px;
         color: #39BBD5;
-        font-weight: 400;
-        line-height: 120px;
+        font-weight: 600;
         text-shadow: 1px 1px 2px #ccc;
+        text-transform: uppercase;
+        vertical-align: top;
+        padding: 0;
+        margin: 0;
+        line-height: 64px;
+        font-family: Arial;
       }
 
       h2 {
+        display: inline-block;
         color: #555;
         text-align: left;
         font-weight: 200;
-        font-size: 30px;
-        margin: 0 auto 30px;
-        padding-left: 140px;
+        font-size: 28px;
         text-transform: uppercase;
-        width: 300px;
+        width: 380px;
         text-shadow: 1px 1px 0 #eee;
+        margin: 0 0 0 28px;
+        vertical-align: top;
+        font-family: Arial;
       }
 
       p {

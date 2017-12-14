@@ -1,28 +1,24 @@
+import { t } from '../../lib/i18n';
 import Project from './Project';
 import pathPrefix from '../../lib/pathPrefix';
 
 const Projects = () => (
   <div className='projects'>
-    <h3>Projectes:</h3>
+    <h3>{t('projects.title')}</h3>
 
     <Project
       logo={pathPrefix('/static/projects/katuma.png')}
       inverted={true}
       social={{github: 'coopdevs/openfoodnetwork', twitter: 'katuma_org'}}
     >
-      <a href='http://www.katuma.org' target='_blank'>KATUMA</a> és una plataforma cooperativa que
-      facilita la creació i gestió de grups de consum. Una alternativa més justa i sostenible a les
-      grans distribuïdores i l'ús d'intermediaris comercials.
+      {t('projects.katuma.description', {link: <a href='http://www.katuma.org' target='_blank'>KATUMA</a>})}
     </Project>
 
     <Project
       logo={pathPrefix('/static/projects/timeoverflow.jpg')}
       social={{github: 'coopdevs/timeoverflow', twitter: 'timeoverflow'}}
     >
-      <a href='https://www.timeoverflow.org/' target='_blank'>TIME OVERFLOW</a> és una plataforma
-      de gestió de Bancs de Temps, un sistema d'oferta de serveis a canvi de temps. La
-      plataforma facilita les tasques de gestió
-      i intercanvi de serveis entre els membres d'un banc.
+      {t('projects.timeoverflow.description', {link: <a href='https://www.timeoverflow.org/' target='_blank'>TIME OVERFLOW</a>})}
     </Project>
 
     <style jsx>{`

@@ -1,3 +1,4 @@
+import { t } from '../../lib/i18n';
 import Friend from './Friend';
 import pathPrefix from '../../lib/pathPrefix';
 
@@ -49,7 +50,7 @@ const renderLogos = () => {
 
 const Friends = () => (
   <div>
-    <h3>Col.laborem amb:</h3>
+    <h3>{t('friends.title')}</h3>
 
     <div className='friends'>
       {renderLogos()}
@@ -63,7 +64,7 @@ const Friends = () => (
       }
 
       .friends {
-        margin: 20px 0;
+        margin: 20px 0 36px;
         display: flex;
         justify-content: space-between;
         width: 100%;
