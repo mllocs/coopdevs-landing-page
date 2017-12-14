@@ -13,4 +13,5 @@
 - `npm install`
 - `npm run build`
 - `npm run export`
+- Commit and push your changes :D
 - `npm run publish` (will push `out` into `gh-pages` subtree).
