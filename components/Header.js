@@ -1,5 +1,3 @@
-import { t } from '../lib/i18n';
-
 const Header = () => (
   <div className='topbar'>
     <div></div>

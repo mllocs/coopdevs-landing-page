@@ -11,14 +11,14 @@ const Projects = () => (
       inverted={true}
       social={{github: 'coopdevs/openfoodnetwork', twitter: 'katuma_org'}}
     >
-      {t('projects.katuma.description', {link: <a href='http://www.katuma.org' target='_blank'>KATUMA</a>})}
+      {t('projects.katuma.description', {link: <a href='http://www.katuma.org' target='_blank'>KATUMA</a>, html: true})}
     </Project>
 
     <Project
       logo={pathPrefix('/static/projects/timeoverflow.jpg')}
       social={{github: 'coopdevs/timeoverflow', twitter: 'timeoverflow'}}
     >
-      {t('projects.timeoverflow.description', {link: <a href='https://www.timeoverflow.org/' target='_blank'>TIME OVERFLOW</a>})}
+      {t('projects.timeoverflow.description', {link: <a href='https://www.timeoverflow.org/' target='_blank'>TIME OVERFLOW</a>, html: true})}
     </Project>
 
     <style jsx>{`
