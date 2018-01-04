@@ -1,9 +1,10 @@
 import { t } from '../lib/i18n';
+import pathPrefix from '../lib/pathPrefix';
 
 const Hero = () => (
   <div className='hero'>
     <div className='hero__logo'>
-      <img src='/static/logo.svg' title={t('hero.title')} alt={t('hero.title')} />
+      <img src={pathPrefix('/static/logo.svg')} title={t('hero.title')} alt={t('hero.title')} />
     </div>
 
     <p>{t('hero.description_1', { html: true })}</p>
