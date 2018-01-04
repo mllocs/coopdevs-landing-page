@@ -2,8 +2,8 @@ const Header = () => (
   <div className='topbar'>
     <div></div>
     <div className='languages'>
-      <a href='?ln=ca' className='language'>Català</a>
-      <a href='?ln=es' className='language'>Español</a>
+      <a href='/ca' className='language'>Català</a>
+      <a href='/es' className='language'>Español</a>
     </div>
 
     <style jsx>{`

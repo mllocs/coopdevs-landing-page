@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Coopdevs, Software libre para la economía social",
-    "description_1": "Coopdevs es una asociación de desarrolladores de <em>software</em> que tiene como objectivo <strong> impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre.",
+    "description_1": "Coopdevs es una asociación de personas que tiene como objectivo <strong> impulsar soluciones tecnológicas para fomentar y promover la economía social</strong>. Todos los proyectos en los que participamos son de código abierto y licencia libre.",
     "description_2": "Si queréis colaborar con nosotros nos podéis encontrar en %{link_pagina} y en %{link_github}. También nos podéis escribir a <u>info@coopdevs.org</u> o hacernos una visita al %{link_espai} de la Sagrera."
   },
   "projects": {

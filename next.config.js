@@ -5,6 +5,8 @@ module.exports = {
   exportPathMap: function () {
     return {
       '/': { page: '/' },
+      '/ca': { page: '/ca' },
+      '/es': { page: '/es' },
     }
   }
 }
