@@ -1,9 +1,11 @@
+import pathPrefix from '../lib/pathPrefix';
+
 const Header = () => (
   <div className='topbar'>
     <div></div>
     <div className='languages'>
-      <a href='/ca' className='language'>Català</a>
-      <a href='/es' className='language'>Español</a>
+      <a href={pathPrefix('/ca')} className='language'>Català</a>
+      <a href={pathPrefix('/es')} className='language'>Español</a>
     </div>
 
     <style jsx>{`
